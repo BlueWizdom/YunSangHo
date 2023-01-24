@@ -3,24 +3,42 @@ layout: about
 ---
 
 # About Me
-There is no specific format here. You can fill out the form you want.  
-For example, you might want to write a brief introduction about your self, experience, interests, publications, and other information.  
-I wrote "about me", "career", and "interests" on this page as an example.  
+
+**안녕하세요, 제 이름은 윤상호입니다.**<br/>
+
+**원래 전공은 무역학이지만 지난 1년 동안 참된 소프트웨어 개발자가 되기 위해 노력해왔습니다.**<br/>
+
+**특히 웹사이트 / 모바일 앱 제작 관련 일을 하고 싶습니다. 잘 부탁드립니다. 감사합니다.**
 
 <br/>
 
 # Career
-* Second Company (2012/01 ~ )
-  * Web Application Firewall
-    * Developed TCP network acceleration module.
-    * Developde Application User Interface.
-* First Company (2011/01 ~ 2011/12)
-  * VPN Development Company
-  * Team Leader of VPN Development Div.
+
+* 하이미디어 안양 캠퍼스 주관 **React.js와 Springboot를 활용한 풀스택 개발자 양성 과정** (2022.06 ~ 2022.11)
+  
+  * 세미 · 파이널 총 2번의 웹/모바일 프로젝트 경험 보유 (모두 apache tomcat과 MVC 패턴 2유형 기반)
+  * 세미 프로젝트에선 JSP와 Oracle, 파이널에선 본격적으로 Spring framework와 MariaDB, MyBatis로 개발
+  * 그 외 API 사용 경험 있음 (카카오/다음 지도, Iamport 결제, 한국관광공사 TourAPI)
+
+* 한국건설기계협회 **무역실무자양성핵심과정** (2016.06 ~ 2016.11)
+  
+  * 국제무역사 / 무역 영어 1급 / 원산지 관리자 취득
+
+* 수원대학교 **글로벌비즈니스 전공** 졸업 (2017.02)
+  
+  * 4.1/4.5 수료
+
+* 안양고등학교 졸업 (2011.02)
 
 <br/>
 
 # Interests
-I am interested in technology trends.  
-I'm not afraid to learn languages, but I enjoy using Python.  
-I like to automate and reduce annoying things.  
+ **IT/테크놀러지/컴퓨터/기술 전반에 관심이 많습니다.**<br/>
+
+ **(컴퓨터를 다뤄 스스로 조립하고 수리하는것을 즐깁니다.)**<br/>
+
+ **개발 언어에 관심이 많아 최근 블로그에 공부한 자바 관련 내용들을 업로드 했습니다.**
+ 
+ **더 발전하고 성장하기 위해 간간이 파이썬과 여러 프론트엔드 프레임워크들을 공부중입니다.**<br/>
+
+ **그 외 취미는 수영, 음악감상 입니다.**<br/>

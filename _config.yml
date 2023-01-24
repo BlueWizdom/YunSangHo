@@ -1,14 +1,14 @@
 # Site settings
-title: A.P
+title: YSH
 baseurl: "/YunSangHo"
 url: "https://bluewizdom.github.io"
 google_analytics:
 
 # Author
 author:
-  name: KyeongSeob Sim
-  desc: Hello nice to meet you
-  email: ksub0912@gmail.com
+  name: Yun Sang Ho
+  desc: Hello I'm ready to work on Software Developer.
+  email: yssh0424@gmail.com
   selfie: assets/img/profile.jpg
 
 # social
@@ -17,13 +17,13 @@ social:
   behance:
   bitbucket:
   dribbble:
-  facebook: Test
+  facebook:
   flickr:
-  github: kssim
+  github: BlueWizdom
   google_plus:
   instagram:
   keybase:
-  linkedin: https://www.linkedin.com/in/kssim/ 
+  linkedin:
   pinterest:
   reddit:
   soundcloud:
@@ -31,8 +31,8 @@ social:
   steam:
   tumblr:
   gitlab:
-  twitter: Test
-  vimeo:
+  twitter:
+  velog: yssh0424
   wordpress:
   youtube:
   default_txt: "Follow On"
