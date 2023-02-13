@@ -30,11 +30,37 @@
           <h2 class="nav-title">YSH</h2>
         </a>
         <ul>
-          <li><a href="/YunSangHo/">About</a></li>
-          <li><a href="/YunSangHo/portfolio/">Portfolio</a></li>
+          <li><a id="AboutId" href="/YunSangHo/">About</a></li>
+          <li><a id="PortfolioId" href="/YunSangHo/portfolio/">Portfolio</a></li>
         </ul>
     </div>
   </nav>
+
+  <script>
+    
+    var curlink = document.location.href;
+    var myName = "YunSangHo";
+    var curlink_rl = curlink.substring(curlink.lastIndexOf(myName) + 9);
+
+    var About_e = document.getElementById('AboutId');
+    var Portfolio_e = document.getElementById('PortfolioId');
+
+    if(curlink_rl == "/") {
+        About_e.innerHTML = "<b>About</b>";
+        About_e.style.opacity = "1";
+        About_e.style.textDecoration = "underline";
+
+    } else if(curlink_rl == "/portfolio/") {
+        Portfolio_e.innerHTML = "<b>Portfolio</b>";
+        Portfolio_e.style.opacity = "1";
+        Portfolio_e.style.textDecoration = "underline";
+    } else {
+        Portfolio_e.innerHTML = "<b>Portfolio</b>";
+        Portfolio_e.style.opacity = "1";
+        Portfolio_e.style.textDecoration = "underline";
+    }
+
+  </script>
 
     <main>
       <div class="portfolio">
@@ -98,7 +124,7 @@
 
     <footer>
       <span>
-        &copy; <time datetime="2023-01-24 23:20:51 +0900">2023</time> Yun Sang Ho. <a href="https://github.com/kssim/about-portfolio/">A.P</a> theme by kssim.
+        &copy; <time datetime="2023-02-13 18:56:21 +0900">2023</time> Yun Sang Ho. <a href="https://github.com/kssim/about-portfolio/">A.P</a> theme by kssim.
       </span>
     </footer>
   </body>

@@ -10,11 +10,37 @@
           <h2 class="nav-title">{{ site.title }}</h2>
         </a>
         <ul>
-          <li><a href="{{ '/' | prepend: site.baseurl }}">About</a></li>
-          <li><a href="{{ '/portfolio' | prepend: site.baseurl }}/">Portfolio</a></li>
+          <li><a id="AboutId" href="{{ '/' | prepend: site.baseurl }}">About</a></li>
+          <li><a id="PortfolioId" href="{{ '/portfolio' | prepend: site.baseurl }}/">Portfolio</a></li>
         </ul>
     </div>
   </nav>
+
+  <script>
+    
+    var curlink = document.location.href;
+    var myName = "YunSangHo";
+    var curlink_rl = curlink.substring(curlink.lastIndexOf(myName) + 9);
+
+    var About_e = document.getElementById('AboutId');
+    var Portfolio_e = document.getElementById('PortfolioId');
+
+    if(curlink_rl == "/") {
+        About_e.innerHTML = "<b>About</b>";
+        About_e.style.opacity = "1";
+        About_e.style.textDecoration = "underline";
+
+    } else if(curlink_rl == "/portfolio/") {
+        Portfolio_e.innerHTML = "<b>Portfolio</b>";
+        Portfolio_e.style.opacity = "1";
+        Portfolio_e.style.textDecoration = "underline";
+    } else {
+        Portfolio_e.innerHTML = "<b>Portfolio</b>";
+        Portfolio_e.style.opacity = "1";
+        Portfolio_e.style.textDecoration = "underline";
+    }
+
+  </script>
 
     <main>
       {{ content }}

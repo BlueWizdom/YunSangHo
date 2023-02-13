@@ -8,10 +8,16 @@ layout: base
 	<input type="radio" name="slide" id="slide01" checked>
 	<input type="radio" name="slide" id="slide02">
 	<input type="radio" name="slide" id="slide03">
+	<input type="radio" name="slide" id="slide04">
 	<div class="slidewrap">
 		
 		<ul class="slidelist">
 			<!-- 슬라이드 영역 -->
+			<li class="slideitem">
+				<a>
+					<img src="{{ page.img | prepend: site.baseurl }}">
+				</a>
+			</li>
 			<li class="slideitem">
 				<a>
 					<img src="{{ page.img1 | prepend: site.baseurl }}">
@@ -21,35 +27,41 @@ layout: base
 				<a>
 					<img src="{{ page.img2 | prepend: site.baseurl }}">
 				</a>
-			</li>
+			</li class="slideitem">
 			<li class="slideitem">
 				<a>
 					<img src="{{ page.img3 | prepend: site.baseurl }}">
 				</a>
 			</li class="slideitem">
 
-			<!-- 좌,우 슬라이드 버튼 -->
-			<div class="slide-control">
-				<div>
-					<label for="slide03" class="left"></label>
-					<label for="slide02" class="right"></label>
-				</div>
-				<div>
-					<label for="slide01" class="left"></label>
-					<label for="slide03" class="right"></label>
-				</div>
-				<div>
-					<label for="slide02" class="left"></label>
-					<label for="slide01" class="right"></label>
-				</div>
+					<!-- 좌,우 슬라이드 버튼 -->
+		<div class="slide-control">
+			<div class="control01">
+				<label for="slide04" class="left"></label>
+				<label for="slide02" class="right"></label>
 			</div>
+			<div class="control02">
+				<label for="slide01" class="left"></label>
+				<label for="slide03" class="right"></label>
+			</div>
+			<div class="control03">
+				<label for="slide02" class="left"></label>
+				<label for="slide04" class="right"></label>
+			</div>
+			<div class="control04">
+				<label for="slide03" class="left"></label>
+				<label for="slide01" class="right"></label>
+			</div>
+		</div>
 
 		</ul>
+
 		<!-- 페이징 -->
 		<ul class="slide-pagelist">
 			<li><label for="slide01"></label></li>
 			<li><label for="slide02"></label></li>
 			<li><label for="slide03"></label></li>
+			<li><label for="slide04"></label></li>
 		</ul>
 	</div>
 

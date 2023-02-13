@@ -18,7 +18,7 @@ img3: /assets/img/TripOnPlan/TripOnPlan_Pay.png
 **2022.10.21 ~ 2022.11.18**<br/>
 
 ## - What things I Did -
-**숙박시설 CRUD, Import 결제 API를 활용한 예약(결제) 기능을 담당했음.**<br/>
+**숙박시설 CRUD, Iamport 결제 API를 활용한 예약(결제) 기능 구현을 담당.**<br/>
 
 ## - GitHub Address -
 **[<img src="/YunSangHo/assets/img/github.svg" width="64px" height="64px" alt="TripOnPlan 깃허브 주소" title="TripOnPlan 깃허브 주소"/>](https://github.com/BlueWizdom/TripOnPlan)**

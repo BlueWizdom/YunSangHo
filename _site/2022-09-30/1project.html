@@ -30,11 +30,37 @@
           <h2 class="nav-title">YSH</h2>
         </a>
         <ul>
-          <li><a href="/YunSangHo/">About</a></li>
-          <li><a href="/YunSangHo/portfolio/">Portfolio</a></li>
+          <li><a id="AboutId" href="/YunSangHo/">About</a></li>
+          <li><a id="PortfolioId" href="/YunSangHo/portfolio/">Portfolio</a></li>
         </ul>
     </div>
   </nav>
+
+  <script>
+    
+    var curlink = document.location.href;
+    var myName = "YunSangHo";
+    var curlink_rl = curlink.substring(curlink.lastIndexOf(myName) + 9);
+
+    var About_e = document.getElementById('AboutId');
+    var Portfolio_e = document.getElementById('PortfolioId');
+
+    if(curlink_rl == "/") {
+        About_e.innerHTML = "<b>About</b>";
+        About_e.style.opacity = "1";
+        About_e.style.textDecoration = "underline";
+
+    } else if(curlink_rl == "/portfolio/") {
+        Portfolio_e.innerHTML = "<b>Portfolio</b>";
+        Portfolio_e.style.opacity = "1";
+        Portfolio_e.style.textDecoration = "underline";
+    } else {
+        Portfolio_e.innerHTML = "<b>Portfolio</b>";
+        Portfolio_e.style.opacity = "1";
+        Portfolio_e.style.textDecoration = "underline";
+    }
+
+  </script>
 
     <main>
       <div class="post">
@@ -43,10 +69,16 @@
 	<input type="radio" name="slide" id="slide01" checked>
 	<input type="radio" name="slide" id="slide02">
 	<input type="radio" name="slide" id="slide03">
+	<input type="radio" name="slide" id="slide04">
 	<div class="slidewrap">
 		
 		<ul class="slidelist">
 			<!-- 슬라이드 영역 -->
+			<li class="slideitem">
+				<a>
+					<img src="/YunSangHo/assets/img/1project/1project_Main.png">
+				</a>
+			</li>
 			<li class="slideitem">
 				<a>
 					<img src="/YunSangHo/assets/img/1project/1project_Login.png">
@@ -56,35 +88,41 @@
 				<a>
 					<img src="/YunSangHo/assets/img/1project/1project_Professor.png">
 				</a>
-			</li>
+			</li class="slideitem">
 			<li class="slideitem">
 				<a>
 					<img src="/YunSangHo/assets/img/1project/1project_Admin_professor.png">
 				</a>
 			</li class="slideitem">
 
-			<!-- 좌,우 슬라이드 버튼 -->
-			<div class="slide-control">
-				<div>
-					<label for="slide03" class="left"></label>
-					<label for="slide02" class="right"></label>
-				</div>
-				<div>
-					<label for="slide01" class="left"></label>
-					<label for="slide03" class="right"></label>
-				</div>
-				<div>
-					<label for="slide02" class="left"></label>
-					<label for="slide01" class="right"></label>
-				</div>
+					<!-- 좌,우 슬라이드 버튼 -->
+		<div class="slide-control">
+			<div class="control01">
+				<label for="slide04" class="left"></label>
+				<label for="slide02" class="right"></label>
 			</div>
+			<div class="control02">
+				<label for="slide01" class="left"></label>
+				<label for="slide03" class="right"></label>
+			</div>
+			<div class="control03">
+				<label for="slide02" class="left"></label>
+				<label for="slide04" class="right"></label>
+			</div>
+			<div class="control04">
+				<label for="slide03" class="left"></label>
+				<label for="slide01" class="right"></label>
+			</div>
+		</div>
 
 		</ul>
+
 		<!-- 페이징 -->
 		<ul class="slide-pagelist">
 			<li><label for="slide01"></label></li>
 			<li><label for="slide02"></label></li>
 			<li><label for="slide03"></label></li>
+			<li><label for="slide04"></label></li>
 		</ul>
 	</div>
 
@@ -99,7 +137,7 @@
 <p><strong>2022.09.06 ~ 2022.09.30</strong><br /></p>
 
 <h2 id="--what-things-i-did--">- What things I Did -</h2>
-<p><strong>교수진 CRUD, 관리자 로그인을 담당했음.</strong><br /></p>
+<p><strong>교수진 CRUD, 관리자 로그인을 담당.</strong><br /></p>
 
 <h2 id="--github-address--">- GitHub Address -</h2>
 <p><strong><a href="https://github.com/BlueWizdom/1project"><img src="/YunSangHo/assets/img/github.svg" width="64px" height="64px" alt="1project 깃허브 주소" title="1project 깃허브 주소" /></a></strong></p>
@@ -120,7 +158,7 @@
 
     <footer>
       <span>
-        &copy; <time datetime="2023-01-24 23:20:51 +0900">2023</time> Yun Sang Ho. <a href="https://github.com/kssim/about-portfolio/">A.P</a> theme by kssim.
+        &copy; <time datetime="2023-02-13 18:56:21 +0900">2023</time> Yun Sang Ho. <a href="https://github.com/kssim/about-portfolio/">A.P</a> theme by kssim.
       </span>
     </footer>
   </body>

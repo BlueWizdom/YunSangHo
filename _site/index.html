@@ -30,11 +30,37 @@
           <h2 class="nav-title">YSH</h2>
         </a>
         <ul>
-          <li><a href="/YunSangHo/">About</a></li>
-          <li><a href="/YunSangHo/portfolio/">Portfolio</a></li>
+          <li><a id="AboutId" href="/YunSangHo/">About</a></li>
+          <li><a id="PortfolioId" href="/YunSangHo/portfolio/">Portfolio</a></li>
         </ul>
     </div>
   </nav>
+
+  <script>
+    
+    var curlink = document.location.href;
+    var myName = "YunSangHo";
+    var curlink_rl = curlink.substring(curlink.lastIndexOf(myName) + 9);
+
+    var About_e = document.getElementById('AboutId');
+    var Portfolio_e = document.getElementById('PortfolioId');
+
+    if(curlink_rl == "/") {
+        About_e.innerHTML = "<b>About</b>";
+        About_e.style.opacity = "1";
+        About_e.style.textDecoration = "underline";
+
+    } else if(curlink_rl == "/portfolio/") {
+        Portfolio_e.innerHTML = "<b>Portfolio</b>";
+        Portfolio_e.style.opacity = "1";
+        Portfolio_e.style.textDecoration = "underline";
+    } else {
+        Portfolio_e.innerHTML = "<b>Portfolio</b>";
+        Portfolio_e.style.opacity = "1";
+        Portfolio_e.style.textDecoration = "underline";
+    }
+
+  </script>
 
     <main>
       <div class="about">
@@ -64,9 +90,22 @@
     <p>하이미디어 안양 캠퍼스 주관 <strong>React.js와 Springboot를 활용한 풀스택 개발자 양성 과정</strong> (2022.06 ~ 2022.11)</p>
 
     <ul>
-      <li>세미 · 파이널 총 2번의 웹/모바일 프로젝트 경험 보유 (모두 apache tomcat과 MVC 패턴 2유형 기반)</li>
-      <li>세미 프로젝트에선 JSP와 Oracle, 파이널에선 본격적으로 Spring framework와 MariaDB, MyBatis로 개발</li>
-      <li>그 외 API 사용 경험 있음 (카카오/다음 지도, Iamport 결제, 한국관광공사 TourAPI)</li>
+      <li>
+        <p>세미 · 파이널 <strong>총 2번의 웹/모바일 프로젝트 경험 보유</strong> (MVC 패턴 2유형 기반)</p>
+      </li>
+      <li>
+        <p><strong>세미</strong> 프로젝트는 <strong>JSP</strong>와 <strong>Oracle</strong>, <strong>파이널</strong>은 <strong>apache tomcat, Spring, MariaDB, MyBatis로 개발</strong></p>
+      </li>
+      <li>
+        <p>그 외 <strong>API 사용 경험 있음 (카카오/다음 지도, Iamport 결제, 한국관광공사 TourAPI 4.0)</strong></p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>수원대학교 <strong>글로벌비즈니스 전공</strong> 졸업 (2017.02)</p>
+
+    <ul>
+      <li><strong>4.1/4.5 학점 달성</strong></li>
     </ul>
   </li>
   <li>
@@ -75,16 +114,6 @@
     <ul>
       <li>국제무역사 / 무역 영어 1급 / 원산지 관리자 취득</li>
     </ul>
-  </li>
-  <li>
-    <p>수원대학교 <strong>글로벌비즈니스 전공</strong> 졸업 (2017.02)</p>
-
-    <ul>
-      <li>4.1/4.5 수료</li>
-    </ul>
-  </li>
-  <li>
-    <p>안양고등학교 졸업 (2011.02)</p>
   </li>
 </ul>
 
@@ -186,7 +215,7 @@
 
     <footer>
       <span>
-        &copy; <time datetime="2023-01-24 23:20:51 +0900">2023</time> Yun Sang Ho. <a href="https://github.com/kssim/about-portfolio/">A.P</a> theme by kssim.
+        &copy; <time datetime="2023-02-13 18:56:21 +0900">2023</time> Yun Sang Ho. <a href="https://github.com/kssim/about-portfolio/">A.P</a> theme by kssim.
       </span>
     </footer>
   </body>
